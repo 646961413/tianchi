@@ -1,3 +1,6 @@
+#!usr/bin/env python
+# coding=utf-8
+
 f=open('newdata.csv')
 context=f.readlines()
 
@@ -28,4 +31,4 @@ for i in range(31):
 			if ui in ui_byday[i-j-1]:
 				count+=1
 				break
-	print str(i)+':' str(count)+','+str(count/len(ui_buy_byday[i]))
+	print '%d:%f,%f'%(i,count,count/len(ui_buy_byday[i]))
