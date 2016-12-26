@@ -5,7 +5,7 @@ f=open('newdata.csv')
 context=f.readlines()
 
 ##统计一下|set（当天购买的ui对）交集set（前n天的交互ui对）|除以|set（当天购买的ui对）|
-n=2
+n=7
 ui_byday=[set() for i in range(31)]
 ui_buy_byday=[set() for i in range(31)]
 for line in context:
